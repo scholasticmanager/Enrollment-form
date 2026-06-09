@@ -1,0 +1,267 @@
+/*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+    transition: 2s;
+    scroll-behavior: smooth;
+    color: white;
+}
+body{
+    position: fixed;
+    background-color: transparent;
+}
+div{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    overflow: hidden;
+    background-color: white;
+}
+.icons{
+    width: 25px;
+    height: 25px;
+}
+
+
+
+
+.content-wrapper{
+    position: fixed;
+    top: 60px;
+    width: 100%;
+    height: 100%;
+    background-color: #1fadff;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.form-holder{
+    position: relative;
+    width: 600px;
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    background: #0080802d;
+    border: 2px solid #ffffffb3;
+    backdrop-filter: blur(5px);
+    box-shadow: 15px 17px 17px #00000040;
+}
+#title{
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: underline;
+}
+.enroll-form{
+    width: 500px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.input-box{
+    border: none;
+    border-radius: 50px;
+    width: 200px;
+    outline: none;
+    text-align: center;
+    color: #6b8a47;
+    padding: 5px;
+}
+
+#enroll{
+    display: flex;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    background-color: #f79651;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+}
+#enroll:hover{
+    background-color: #6b8a47;
+}*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+    list-style: none;
+    text-decoration: none;
+    transition: 2s;
+    scroll-behavior: smooth;
+    color: white;
+}
+body{
+    background-image: -webkit-linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("/Assets/cernterednotebook.jpg");
+    background-size: cover;
+    background-position: center;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:20px;
+}
+.top-nav{
+    top: 0;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    background-color: #3a3a3a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+    border-bottom: 2px solid #6b8a47;
+}
+#Learning-logo{
+    position: fixed;
+    width: 155px;
+    height: auto;
+    left: 50px;
+}
+#scholastic-system{
+    position: absolute;
+    right: 20px;
+    padding: 7px 15px;
+    border: none;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    background: #f79651;
+    transition: all 0.3s ease;
+}
+#scholastic-system:hover{
+    background:#6b8a47;
+}
+#scholastic-system:active {
+    transform: translateY(5px);
+    transform: scale(0.97);
+    box-shadow: none;
+}
+@media all and (max-width: 800px){
+    #Learning-logo{
+        width: 120px;
+        height: auto;
+        left: 10px;
+    }
+    #scholastic-system{
+        position: absolute;
+        right: 10px;
+        padding: 7px 10px;
+        border: none;
+        font-size: 12px;
+        font-weight: bold;
+        border-radius: 50px;
+        cursor: pointer;
+        background: #f79651;
+        transition: all 0.3s ease;
+    }
+}
+.container{
+    position: relative;
+    margin-top: 70px;
+    width:100%;
+    max-width:700px;
+    background:#3a3a3a05;
+    backdrop-filter: blur(20px);
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(0,0,0,0.4);
+    z-index: 1;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+label{
+    font-weight:bold;
+}
+
+input, select, textarea{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#444;
+    color:white;
+    outline:none;
+}
+
+input::placeholder, textarea::placeholder{
+    color:#ccc;
+}
+
+
+.radio-group{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.radio-group label{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-weight:normal;
+    cursor:pointer;
+    color: #fff;
+}
+
+.radio-group input[type="radio"]{
+    width:auto;
+    margin:0;
+}
+
+.agreement-box{
+    background:#3a3a3a;
+    padding:15px;
+    border-radius:8px;
+    height:auto;
+    line-height:1.6;
+}
+
+.checkbox{
+    display:flex;
+    align-items:flex-start;
+    gap:10px;
+}
+
+.checkbox input{
+    width:auto;
+    margin-top:4px;
+}
+
+#submit{
+    background: #f79651;
+    color:white;
+    border:none;
+    padding:15px;
+    border-radius:8px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition: all 0.3s ease;
+}
+
+#submit:hover{
+    background:#6b8a47;
+}
+#submit:active {
+    transform: translateY(5px);
+    transform: scale(0.97);
+    box-shadow: none;
+}

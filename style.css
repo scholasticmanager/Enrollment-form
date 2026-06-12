@@ -10,7 +10,7 @@
     color: white;
 }
 body{
-    background-image: -webkit-linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("Assets/cernterednotebook.jpg");
+    background-image: -webkit-linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("/Assets/cernterednotebook.jpg");
     background-size: cover;
     background-position: center;
     color:white;
